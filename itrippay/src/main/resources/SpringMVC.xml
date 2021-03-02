@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+         http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="com.itrip.controller"></context:component-scan>
+
+    <!-- 	视图解析器 作用:把逻辑视图加上前后缀生成实际的物理路径-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--  注解驱动  -->
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter" >
+                <property name = "supportedMediaTypes">
+                    <list>
+                        <value>application/json;charset=utf-8</value>
+                        <value>text/html;charset=utf-8</value>
+                    </list>
+                </property>
+            </bean>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" >
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <bean id="pay" class="config.WXPayConfig">
+        <property name="money" value="1"></property>
+        <property name="title" value="学习测试"></property>
+        <property name="appID" value="wxab8acb865bb1637e"/>
+        <property name="mchID" value="11473623"/>
+        <property name="key" value="2ab9071b06b9f739b950ddb41db2690d"/>
+        <property name="notifyUrl" value="37s8807r32.zicp.vip/pay/Pay2"></property>
+    </bean>
+</beans>

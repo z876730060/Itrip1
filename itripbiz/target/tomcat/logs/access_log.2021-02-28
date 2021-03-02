@@ -1,0 +1,17 @@
+127.0.0.1 - - [28/Feb/2021:17:38:38 +0800] "GET /biz/api/hotel/queryhotcity/1 HTTP/1.0" 200 1234 http-bio-8081-exec-2 300
+127.0.0.1 - - [28/Feb/2021:17:38:38 +0800] "GET /biz/api/hotel/queryhotcity/2 HTTP/1.0" 200 1198 http-bio-8081-exec-1 300
+127.0.0.1 - - [28/Feb/2021:17:38:38 +0800] "GET /biz/api/hotel/queryhotelfeature HTTP/1.0" 200 20487 http-bio-8081-exec-3 300
+127.0.0.1 - - [28/Feb/2021:17:38:51 +0800] "GET /biz/api/hotel/queryhotelfeature HTTP/1.0" 200 20487 http-bio-8081-exec-4 41
+127.0.0.1 - - [28/Feb/2021:17:38:51 +0800] "GET /biz/api/hotel/querytradearea/2 HTTP/1.0" 200 2557 http-bio-8081-exec-5 69
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "GET /biz/api/hotel/getvideodesc/18 HTTP/1.0" 404 949 http-bio-8081-exec-6 12
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "POST /biz/api/hotelroom/queryhotelroombyhotel HTTP/1.0" 404 949 http-bio-8081-exec-7 9
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "GET /biz/api/hotelroom/queryhotelroombed HTTP/1.0" 404 949 http-bio-8081-exec-8 7
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "GET /biz/api/hotel/queryhotelfacilities/18 HTTP/1.0" 404 949 http-bio-8081-exec-1 5
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "GET /biz/api/hotelroom/queryhotelroombed HTTP/1.0" 404 949 http-bio-8081-exec-9 7
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "GET /biz/api/hotel/queryhoteldetails/18 HTTP/1.0" 404 949 http-bio-8081-exec-10 6
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "GET /biz/api/comment/getcount/18 HTTP/1.0" 404 949 http-bio-8081-exec-4 6
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "GET /biz/api/comment/gethotelscore/18 HTTP/1.0" 404 949 http-bio-8081-exec-2 7
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "GET /biz/api/hotel/queryhotelpolicy/18 HTTP/1.0" 404 949 http-bio-8081-exec-3 7
+127.0.0.1 - - [28/Feb/2021:17:39:06 +0800] "POST /biz/api/comment/getcommentlist HTTP/1.0" 404 949 http-bio-8081-exec-5 8
+127.0.0.1 - - [28/Feb/2021:17:39:09 +0800] "GET /biz/api/hotel/querytradearea/2 HTTP/1.0" 200 2557 http-bio-8081-exec-7 21
+127.0.0.1 - - [28/Feb/2021:17:39:09 +0800] "GET /biz/api/hotel/queryhotelfeature HTTP/1.0" 200 20487 http-bio-8081-exec-6 67

@@ -1,0 +1,6 @@
+com\itrip\controller\PayController.class
+config\WXPayUtil.class
+config\WXPayRequest.class
+config\WXPayConfig.class
+config\WXPayConstants$SignType.class
+config\WXPayConstants.class
